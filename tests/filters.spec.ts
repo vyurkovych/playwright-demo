@@ -39,7 +39,7 @@ const testCases: {
 ];
 
 for(const { filtersToApply, mainFilter } of testCases) {
-  test.only(`list "${mainFilter.title} - ${mainFilter.value}" products`, async ({ page, app }) => {
+  test(`list "${mainFilter.title} - ${mainFilter.value}" products`, async ({ page, app }) => {
     const {
       cookieConsent,
       category,
